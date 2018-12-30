@@ -2,9 +2,7 @@ package com.soft1841.sm.service;
 
 import com.soft1841.sm.entity.Seller;
 
-/**
- * author By Ytker
- */
+
 public interface SellerLoginService {
     /**
      * 定义布尔值返回登陆类型

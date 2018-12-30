@@ -15,9 +15,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.SQLException;
 
-/**
- * @author By 郭瑞昌
- */
 public class SellerLoginController {
     //登录接口方法的引用
     private SellerLoginService sellerLoginService = ServiceFactory.getSellerServiceInstance();

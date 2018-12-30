@@ -6,10 +6,7 @@ import com.soft1841.sm.entity.Seller;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * 收银员的增删改查
- * author By Ytker
- */
+
 public interface SellerDAO {
 
     /**
