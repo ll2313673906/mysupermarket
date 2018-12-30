@@ -1,4 +1,4 @@
-package com.soft1841.controller;
+package com.soft1841.sm.controller;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
