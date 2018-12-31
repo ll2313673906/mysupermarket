@@ -12,11 +12,11 @@ import java.util.List;
 public class AdminServiceImpl implements AdminService {
     private AdminDAO adminDAO = DAOFactory.getAdminDAOInstance();
     @Override
-    public List<Admin> getAllAdmin() {
-        List <Admin> adminList = new ArrayList<>();
+    public List<Admin> getAllAdmins() {
+        List<Admin> adminList = new ArrayList<>();
         try {
             adminList = adminDAO.selectAllAdmin();
-        }catch (SQLException e) {
+        } catch (SQLException e) {
             System.err.println("查询管理员信息出现异常");
         }
         return adminList;
@@ -27,7 +27,7 @@ public class AdminServiceImpl implements AdminService {
         int result = 0;
         try {
             result = adminDAO.countByAddress(address);
-        }catch (SQLException e) {
+        } catch (SQLException e) {
             System.err.println("根据地址统计管理员信息出现异常");
         }
         return result;
