@@ -13,5 +13,6 @@ public class DAOFactory {
     public static SellerDAO getSellerDAOInstance(){
         return new SellerDAOImpl();
     }
+
     public static AdminDAO getAdminDAOInstance() {return new AdminDAOImpl();}
     }
