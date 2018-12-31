@@ -1,6 +1,4 @@
 package com.soft1841.sm.entity;
-
-
 public class Admin {
     private Integer id;
     private Integer job_id;
@@ -19,7 +17,6 @@ public class Admin {
     }
 
     public Admin() {
-
     }
 
     public Integer getId() {
@@ -46,7 +43,7 @@ public class Admin {
         this.password = password;
     }
 
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
 
@@ -54,23 +51,29 @@ public class Admin {
         this.name = name;
     }
 
-    public String getAvatar(String avatar) {
+    public String getAvatar() {
         return avatar;
     }
 
-    public void setAvatar() {
+    public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
-    public String getAddress(){return address;}
-    public void setAddress(){this.address = address;}
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     @Override
     public String toString() {
         return "Admin{" +
-        "id=" + id +
-        ", job_id=" + job_id +
-        ", password='" + password +'\'' +
-                ", name='" +name + '\'' +
+                "id=" + id +
+                ", job_id=" + job_id +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", address='" + address + '\'' +
                 '}';
