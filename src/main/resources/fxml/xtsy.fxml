@@ -3,166 +3,144 @@
 <!--系统收银fxml
 @Author LiuLian-->
 
-
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="881.0" prefWidth="1247.0" style="-fx-background-color: #88d3f8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1097.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.sm.SellerLoginApp">
    <children>
-      <Label AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" prefHeight="44.0" prefWidth="1247.0" style="-fx-background-color: #365efb;" textFill="#e0e0de" />
-      <AnchorPane AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" prefHeight="131.0" prefWidth="1247.0" style="-fx-background-color: #41b6f4;">
+      <ImageView fitHeight="1106.0" fitWidth="1932.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="/img/A.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1634.0" layoutY="543.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="2">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <Button layoutX="1634.0" layoutY="614.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="5" textFill="#100000">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="1535.0" layoutY="542.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="1" textFill="#282802">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button layoutX="1535.0" layoutY="614.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="4">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="1738.0" layoutY="614.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="6">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="1738.0" layoutY="544.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="3">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="1738.0" layoutY="689.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="9">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="1634.0" layoutY="689.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="8">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="1535.0" layoutY="689.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="7">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="1634.0" layoutY="775.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" style="-fx-background-color: #e57824;" text="0">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="1520.0" layoutY="778.0" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: #ddf40c;" text="清除" textFill="#101e02">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="1750.0" layoutY="778.0" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #ddf40c;" text="返回" textFill="#1b1201">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Label layoutX="1515.0" layoutY="466.0" prefHeight="30.0" prefWidth="97.0" text="小计：（元）" textFill="#f8f7f7" />
+      <TextField layoutX="1612.0" layoutY="466.0" prefHeight="30.0" prefWidth="88.0" />
+      <Button layoutX="1640.0" layoutY="880.0" mnemonicParsing="false" style="-fx-background-color: #ddf40c;" text="确认" textFill="#222502">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="1524.0" layoutY="335.0" text="数量：" />
+      <TextField layoutX="1592.0" layoutY="330.0" prefHeight="30.0" prefWidth="228.0" />
+      <Label layoutX="1524.0" layoutY="402.0" text="折扣：" />
+      <TextField layoutX="1592.0" layoutY="397.0" prefHeight="30.0" prefWidth="228.0" />
+      <AnchorPane layoutX="373.0" layoutY="173.0" prefHeight="498.0" prefWidth="1085.0" style="-fx-background-color: #e7e7db;">
          <children>
-            <HBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" prefHeight="63.0" prefWidth="1005.0" />
-
-            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="24.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/a.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="103.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/b.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="56.0" fitWidth="55.0" layoutX="188.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/c.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="272.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/d.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="872.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/e.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="427.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/f.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="501.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/g.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="577.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/h.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="651.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/i.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="723.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/j.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="61.0" layoutX="798.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/k.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="347.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/l.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="938.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/img/m.png" />
-               </image>
-            </ImageView>
-            <HBox/>
-            <Label alignment="CENTER" layoutX="999.0" layoutY="1.0" prefHeight="115.0" prefWidth="248.0" text="TTSJ 收银系统">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </Label>
-            <Button layoutX="2.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="商品管理" />
-            <Button layoutX="88.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="拉取管理" />
-            <Button layoutX="171.0" layoutY="76.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #88d3f8;" text="商品销售" />
-            <Button layoutX="257.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="销售单" />
-            <Button layoutX="325.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="库区管理" />
-            <Button layoutX="413.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="会员管理" />
-            <Button layoutX="512.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="挂单" />
-            <Button layoutX="574.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="取单" />
-            <Button layoutX="644.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="交班" />
-            <Button layoutX="716.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="设置" />
-            <Button layoutX="782.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="帮助" />
-            <Button layoutX="850.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="订单管理" />
-            <Button layoutX="938.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: #88d3f8;" text="进货" />
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="1083.0" spacing="250.0" style="-fx-background-color: #dd9959;">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="84.0" text="商品的名称" />
+                  <Label text="销售价" textFill="#1b0e01" />
+                  <Label text="数量" />
+               </children>
+            </HBox>
+            <ListView layoutX="1.0" layoutY="74.0" prefHeight="411.0" prefWidth="1083.0" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="18.0" layoutY="217.0" prefHeight="480.0" prefWidth="1210.0" style="-fx-background-color: #e0e0de;" />
-      <Label layoutX="68.0" layoutY="725.0" text="数量（件)：" />
-      <Button layoutX="288.0" layoutY="720.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="80.0" style="-fx-background-color: #41b6f4;" text="移除商品" textFill="#390606" />
-      <Button layoutX="374.0" layoutY="722.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="84.0" style="-fx-background-color: #41b6f4;" text="网上订单" />
-      <TextField layoutX="109.0" layoutY="798.0" prefHeight="36.0" prefWidth="359.0" text="条形码/商品名称" />
-      <TextField layoutX="150.0" layoutY="720.0" prefHeight="43.0" prefWidth="125.0" />
-      <Label layoutX="309.0" layoutY="763.0" text="Delete" />
-      <Label alignment="CENTER_RIGHT" layoutX="437.0" layoutY="798.0" prefHeight="20.0" prefWidth="30.0" style="-fx-background-color: #41b6f4;" text="F2" />
-      <TextField layoutX="523.0" layoutY="727.0" />
-      <TextField layoutX="522.0" layoutY="770.0" />
-      <TextField layoutX="523.0" layoutY="808.0" prefHeight="30.0" prefWidth="105.0" />
-      <TextField layoutX="628.0" layoutY="808.0" prefHeight="30.0" prefWidth="99.0" />
-      <TextField layoutX="727.0" layoutY="808.0" prefHeight="30.0" prefWidth="105.0" />
-      <Button layoutX="745.0" layoutY="730.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="84.0" style="-fx-background-color: #41b6f4;" text="新增会员" />
-      <Label layoutX="779.0" layoutY="773.0" text="F3" />
-      <Button layoutX="935.0" layoutY="726.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="69.0" style="-fx-background-color: #41b6f4;" text="结算">
+      <TextField layoutX="408.0" layoutY="110.0" prefHeight="30.0" prefWidth="275.0" text="商品搜索" />
+      <ImageView fitHeight="20.0" fitWidth="29.0" layoutX="408.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="128.0" fitWidth="142.0" layoutX="1714.0" layoutY="47.0" pickOnBounds="true">
+         <image>
+            <Image url="/img/gril.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1634.0" layoutY="83.0" prefHeight="22.0" prefWidth="84.0" text="收银员" textFill="#f5eeee">
          <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="1020.0" layoutY="725.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="202.0" style="-fx-background-color: #41b6f4;" text="总金额">
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="1618.0" layoutY="125.0" text="2313673906" textFill="#f5f2f2" />
+      <TextField layoutX="1563.0" layoutY="264.0" prefHeight="30.0" prefWidth="257.0" text="输入商品的名称/或编码" />
+      <VBox alignment="CENTER" layoutX="74.0" layoutY="154.0" prefHeight="436.0" prefWidth="235.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="190.0" style="-fx-background-color: #f47e30;" text="排班表" textFill="#281102" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="189.0" style="-fx-background-color: #f47e30;" text="会员管理" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="184.0" style="-fx-background-color: #f47e30;" text="优惠券" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="174.0" style="-fx-background-color: #f47e30;" text="营销活动" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="185.0" style="-fx-background-color: #f47e30;" text="使用说明" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="701.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER" layoutX="328.0" layoutY="779.0" prefHeight="53.0" prefWidth="129.0" text="总计：" textFill="#ebe7dd">
          <font>
-            <Font size="37.0" />
+            <Font size="43.0" />
          </font>
-      </Button>
-      <Label layoutX="932.0" layoutY="808.0" text="（空格键）" />
-      <Label layoutX="1102.0" layoutY="813.0" text="0.00元" />
-      <Button layoutX="68.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #41b6f4;" text="商品名称">
+      </Label>
+      <TextField layoutX="470.0" layoutY="784.0" prefHeight="45.0" prefWidth="123.0" />
+      <Label alignment="CENTER" layoutX="667.0" layoutY="787.0" text="应收：" textFill="#fcfcfc">
          <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="228.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #41b6f4;" text="商品条形码">
+            <Font size="41.0" />
+         </font></Label>
+      <TextField alignment="CENTER" layoutX="804.0" layoutY="791.0" prefHeight="45.0" prefWidth="123.0" />
+      <Button layoutX="392.0" layoutY="916.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="155.0" style="-fx-background-color: #f47905;" text="支付宝支付" textFill="#1b0000">
          <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="407.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #41b6f4;" text="商品现价">
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="613.0" layoutY="914.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="129.0" style="-fx-background-color: #f47905;" text="微信支付" textFill="#1e0101">
          <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="572.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #41b6f4;" text="商品原价">
+            <Font size="23.0" />
+         </font></Button>
+      <Button layoutX="822.0" layoutY="914.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="129.0" style="-fx-background-color: #f47905;" text="刷卡" textFill="#170b00">
          <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="729.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #41b6f4;" text="商品规格">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="890.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #41b6f4;" text="商品数量">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button layoutX="1064.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #41b6f4;" text="小计（元）">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
+            <Font size="23.0" />
+         </font></Button>
+      <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="692.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

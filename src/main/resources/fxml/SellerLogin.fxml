@@ -14,12 +14,12 @@
             <Image url="/img/bja.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="413.0" fitWidth="444.0" layoutX="677.0" layoutY="282.0" pickOnBounds="true">
+      <ImageView fitHeight="413.0" fitWidth="444.0" layoutX="677.0" layoutY="255.0" pickOnBounds="true">
          <image>
             <Image url="/img/bja.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="810.0" layoutY="99.0" text="S R X X  超  市" textFill="#eff1f2">
+      <Label alignment="CENTER" layoutX="821.0" layoutY="99.0" text="自  家  超  市" textFill="#eff1f2">
          <font>
             <Font size="27.0" />
          </font>
@@ -39,12 +39,12 @@
          </font>
       </Label>
       <Label alignment="CENTER" layoutX="953.0" layoutY="531.0" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #3b87e5;" text="忘记密码？" />
-      <Label layoutX="818.0" layoutY="154.0" prefHeight="82.0" prefWidth="162.0" text="SRXXCS" textFill="#f2ebeb">
+      <Label layoutX="816.0" layoutY="145.0" prefHeight="82.0" prefWidth="193.0" text="SRXXCS" textFill="#f2ebeb">
          <font>
-            <Font size="42.0" />
+            <Font size="50.0" />
          </font>
       </Label>
-      <Accordion layoutX="773.0" layoutY="426.0" prefHeight="161.0" prefWidth="252.0">
+      <Accordion layoutX="773.0" layoutY="361.0" prefHeight="161.0" prefWidth="252.0">
         <panes>
           <TitledPane animated="false" text="账号">
                <content>

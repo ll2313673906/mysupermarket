@@ -21,6 +21,7 @@ public class SellerLoginApp extends Application {
         scene.getStylesheets().add("/css/style.css");
         primaryStage.setScene(scene);
         primaryStage.setMaximized(true);
+
         primaryStage.show();
     }
 

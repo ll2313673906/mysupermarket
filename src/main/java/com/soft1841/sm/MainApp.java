@@ -9,11 +9,11 @@ public class MainApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/xtsy.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/backstage.fxml"));
 
         primaryStage.setTitle("超市");
         primaryStage.setScene(new Scene(root, 800, 600));
-
+primaryStage.setMaximized(true);
 
         primaryStage.show();
     }

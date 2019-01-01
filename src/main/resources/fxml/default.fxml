@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="290.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.sm.controller.MainController">
+    <Label text="天庭神界超市管理系统" AnchorPane.leftAnchor="50" AnchorPane.topAnchor="160">
+        <effect>
+            <Reflection bottomOpacity="1.5" fraction="1.5" topOffset="-10.0"/>
+        </effect>
+        <font>
+         <Font size="48.0" />
+      </font></Label>
+<ImageView AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="80" AnchorPane.topAnchor="120">
+    <Image url="/img/BJ.jpg" />
+</ImageView>
+
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1323.0" style="-fx-background-color: #6cb2ea;" styleClass="green-theme" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.sm.AdminLoginApp">
+   <children>
+       <ImageView fitHeight="45" fitWidth="45" AnchorPane.rightAnchor="120" AnchorPane.topAnchor="15">
+          <image>
+              <Image url="/img/my.png" />
+          </image>
+       </ImageView>
+       <Button onAction="#close" styleClass="btn-radius-normal,warm-theme" text="退出系统" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20" />
+       <StackPane fx:id="MainController" layoutY="104.0" prefHeight="623.0" prefWidth="1248.0" styleClass="green-theme" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="104.0">
+          <children>
+                   <fx:include source="default.fxml" />
+            <ScrollPane prefHeight="567.0" prefWidth="1105.0">
+               <content>
+                  <ImageView fitHeight="900.0" fitWidth="2000.0" pickOnBounds="true" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+                     <image>
+                        <Image url="@../../../../../../360Downloads/300552.jpg" />
+                     </image>
+                  </ImageView>
+               </content>
+            </ScrollPane>
+          </children>
+       </StackPane>
+      <HBox alignment="CENTER" prefHeight="107.0" prefWidth="1031.0" spacing="80.0" AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100">
+         <children>
+                 <Button mnemonicParsing="false" onAction="#listType" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="类别查询" textFill="#170702" />
+                 <Button mnemonicParsing="false" onAction="#listGoods" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="商品信息" textFill="#000f1a" />
+                 <Button mnemonicParsing="false" onAction="#listCount" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="统计分析" textFill="#1e0101" />
+               <Button mnemonicParsing="false" onAction="#listAdmin" prefHeight="38.0" prefWidth="65.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="管理员" textFill="#140000" />
+               <Button mnemonicParsing="false" onAction="#listSeller" prefHeight="38.0" prefWidth="65.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="销售员" textFill="#140000" />
+               <Button mnemonicParsing="false" onAction="#listMember" prefHeight="39.0" prefWidth="65.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="会员" textFill="#110000" />
+               <Button mnemonicParsing="false" onAction="#listUser" prefHeight="38.0" prefWidth="65.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="统计" textFill="#000b11" />
+                     <Button mnemonicParsing="false" onAction="#backup" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #f1a68f;" styleClass="bark-theme,btn-basic,btn-radius-normal" text="数据备份" textFill="#0d0000" />
+         </children>
+      </HBox>
+      <Label layoutX="14.0" layoutY="7.0" prefHeight="88.0" prefWidth="162.0" text="srxx超市">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,6 +1,5 @@
 package com.soft1841.sm.dao;
 
-import com.soft1841.sm.dao.SellerDAO;
 import com.soft1841.sm.entity.Seller;
 import com.soft1841.sm.utils.DAOFactory;
 import org.junit.Test;
