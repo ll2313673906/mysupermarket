@@ -1,11 +1,5 @@
 package com.soft1841.sm.controller;
-/**
- * 管理员登录控制器
- * @author LiuLian
- * 2018.12.31
- *
- *
- */
+
 
 import com.soft1841.sm.service.AdminLoginService;
 import com.soft1841.sm.utils.ServiceFactory;
@@ -46,13 +40,13 @@ public class AdminLoginController {
         alert.setTitle("信息提示");
         //当flag为true则执行下列语句
         if (flag) {
-            alert.setContentText("恭喜你登录成功,即将跳转到管理界面");
+            alert.setContentText("恭喜你登录成功,1秒后跳转到管理界面");
             alert.show();
             Thread.sleep(1000);
             alert.close();
             primaryStage.close();
             Stage mainStage = new Stage();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/backstage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/oldbackstage.fxml"));
             BorderPane root = fxmlLoader.load();
             MainController controller = fxmlLoader.getController();
 
@@ -61,6 +55,7 @@ public class AdminLoginController {
             controller.setPrimaryStage(primaryStage);
             Scene scene = new Scene(root);
             scene.getStylesheets().add("/css/style.css");
+
             mainStage.getIcons().add(new Image("/img/logo.png"));
             mainStage.setTitle("管理员界面");
 

@@ -26,6 +26,7 @@ public class SellerLoginController {
     public void setPrimaryStage(Stage primaryStage){
         this.primaryStage = primaryStage;
     }
+
     public void Login() throws IOException, InterruptedException, SQLException {
         //获取用户输入的用户名以及密码
         String use = account.getText().trim();
@@ -42,9 +43,10 @@ public class SellerLoginController {
                 alert.close();
                 primaryStage.close();
                 Stage mainStage = new Stage();
+                primaryStage.setMaximized(true);
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/xtsy.fxml"));
                 AnchorPane root = fxmlLoader.load();
-                Scene scene = new Scene(root);
+                Scene scene = new Scene(root,2000,1000);
                 mainStage.getIcons().add(new Image("/img/logo.png"));
                 scene.getStylesheets().add("/css/style.css");
                 mainStage.setTitle("收银员管理界面");
